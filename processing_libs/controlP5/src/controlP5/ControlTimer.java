@@ -120,28 +120,28 @@ public class ControlTimer {
 	}
 
 	/**
-	 * Seconds position of the timer.
+	 * Seconds _position of the timer.
 	 */
 	public int second() {
 		return s;
 	}
 
 	/**
-	 * Minutes position of the timer.
+	 * Minutes _position of the timer.
 	 */
 	public int minute() {
 		return m;
 	}
 
 	/**
-	 * Hour position of the timer in international format (0-23).
+	 * Hour _position of the timer in international format (0-23).
 	 */
 	public int hour() {
 		return h;
 	}
 
 	/**
-	 * day position of the timer.
+	 * day _position of the timer.
 	 */
 	public int day() {
 		return d;

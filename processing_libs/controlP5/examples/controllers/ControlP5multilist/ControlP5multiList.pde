@@ -54,7 +54,7 @@ void setup() {
   for(int i=0;i<10;i++) {
     MultiListButton c = b.add("level2"+(i+1),20+i+1);
     c.setLabel("level2 item"+(i+1));
-    c.setColorBackground(color(64 + 18*i,0,0));
+    c.setColorBackground(_color(64 + 18*i,0,0));
     
     if(i==4) {
     // changing the width and the height of a button
@@ -70,7 +70,7 @@ void setup() {
         MultiListButton d;
         d = c.add("level2"+i+""+j,250+j+1);
         d.setLabel("level2 item"+(i+1)+" "+"item"+(j+1));
-        d.setColorBackground(color(64 + 18*j,(64 + 18*j)/2,0));
+        d.setColorBackground(_color(64 + 18*j,(64 + 18*j)/2,0));
         d.setId(cnt);
         d.setWidth(200);
       }

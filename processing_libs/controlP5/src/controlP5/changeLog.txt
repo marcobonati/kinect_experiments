@@ -110,7 +110,7 @@
       https://processing-js.lighthouseapp.com/projects/41284/tickets/1972-feature-request-access-sketch-global-variables-from-library
       	      
       * src controlP5.Slider2D:
-      changed size of cursor, changed color handling
+      changed size of cursor, changed _color handling
       
       * src controlP5.Button:
       alignment of caption label changed to CENTER,CENTER
@@ -604,7 +604,7 @@
       
       * src controlP5/CColor.java:
       Fields changed from protected to private, use setter and getter 
-      to change color values. CColor is serializable so that instances can
+      to change _color values. CColor is serializable so that instances can
       be saved as properties.
       
       * src controlP5/Accordion.java:
@@ -632,8 +632,8 @@
       * version 0.5.6	
       
       * src/controlP5/ListBox.java: 
-      adding updateListBoxItems() to update color changes.
-      adding scoll() calls to color related methods to update color 
+      adding updateListBoxItems() to update _color changes.
+      adding scoll() calls to _color related methods to update _color
       changes for currently active listBox buttons.
       
       * src/controlP5/ListBox.java:
@@ -742,7 +742,7 @@
       * ControlP5: lock() and unlock() are working again.
       * ControlEvent: added function id() to make access to the id of  controller, group, tab, etc. easier
       * ControlEvent: added function type() for easier distinguishing between the type of Controller the event was triggered from, returns ControlEvent.UNDEFINED, ControlEvent.CONTROLLER, ControlEvent.TAB, ControlEvent.GROUP 
-      * ListBoxItem: adding ListBoxItem to make changes to each item of a listBox especially the color settings of a listBoxItem.
+      * ListBoxItem: adding ListBoxItem to make changes to each item of a listBox especially the _color settings of a listBoxItem.
       * CColor: now with getter and setter functions, supports changing the value of the alpha channel.
       * ControlWindow: adding begin() and end(). this allows to move controllers automatically to the main window or a separate controlWindow.
       * ControllerGroup: adding enableCollapse(), disableCollapse(), isCollapse() to enable/disable the collapsing and opening of a controllerGroup e.g. listBox.
@@ -752,7 +752,7 @@
       * making transition to 1.5+, no more java 1.4 support.
       * compiling against processing 1.1
       * ControlP5: added disableKeys() and enableKeys(), suggested in the discourse. disables and enables keyEvents such as hide/show with ALT-h.
-      * Toggle: when inactive, the color refers to colorBackground instead of colorForeground now.
+      * Toggle: when inactive, the _color refers to colorBackground instead of colorForeground now.
       * ControlFont: smooth related functions have been disabled and deprecated due to processing 1.1 changes.
       * Slider: use alignValueLabel() to position the value label of a slider on TOP, CENTER, or BOTTOM
       * example ControlP5quick: new, ControlP5quick shows how to quickly add Controllers with auto-arrangement.

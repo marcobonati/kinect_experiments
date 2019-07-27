@@ -13,7 +13,7 @@ ControlP5 cp5;
 
 int buttonValue = 1;
 
-int myColor = color(255, 0, 0);
+int myColor = _color(255, 0, 0);
 
 void setup() {
   size(400, 400, OPENGL);
@@ -53,6 +53,6 @@ void controlEvent(ControlEvent theEvent) {
 }
 
 void button(float theValue) {
-  myColor = color(random(255), random(255), random(255));
+  myColor = _color(random(255), random(255), random(255));
   println("a button event. "+theValue);
 }

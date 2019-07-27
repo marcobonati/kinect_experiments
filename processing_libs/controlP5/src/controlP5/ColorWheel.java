@@ -175,7 +175,7 @@ public class ColorWheel extends Controller< ColorWheel > {
 
 	private void setColorResources( ) {
 		/* for now there is only a default resource but this
-		 * can be extended to support other color models in
+		 * can be extended to support other _color models in
 		 * the future. */
 
 		PGraphics buffer = _myColorResources.get( "default" );

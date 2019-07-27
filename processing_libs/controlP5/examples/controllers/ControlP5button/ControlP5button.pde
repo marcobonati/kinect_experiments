@@ -14,7 +14,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColor = color(255);
+int myColor = _color(255);
 
 int c1,c2;
 
@@ -79,7 +79,7 @@ public void controlEvent(ControlEvent theEvent) {
 public void colorA(int theValue) {
   println("a button event from colorA: "+theValue);
   c1 = c2;
-  c2 = color(0,160,100);
+  c2 = _color(0,160,100);
 }
 
 // function colorB will receive changes from 
@@ -87,7 +87,7 @@ public void colorA(int theValue) {
 public void colorB(int theValue) {
   println("a button event from colorB: "+theValue);
   c1 = c2;
-  c2 = color(150,0,0);
+  c2 = _color(150,0,0);
 }
 
 // function colorC will receive changes from 
@@ -95,13 +95,13 @@ public void colorB(int theValue) {
 public void colorC(int theValue) {
   println("a button event from colorC: "+theValue);
   c1 = c2;
-  c2 = color(255,255,0);
+  c2 = _color(255,255,0);
 }
 
 public void play(int theValue) {
   println("a button event from buttonB: "+theValue);
   c1 = c2;
-  c2 = color(0,0,0);
+  c2 = _color(0,0,0);
 }
 
 

@@ -1,4 +1,5 @@
-import com.jsoniter.output.JsonStream;
+import com.magicmirror.kinect.ui.UIConstants;
+import com.magicmirror.kinect.ui.UIUtils;
 import processing.core.PApplet;
 import controlP5.*;
 import SimpleOpenNI.*;
@@ -55,12 +56,14 @@ public class Main extends PApplet {
     // identical use to setup in Processing IDE except for size()
     public void setup() {
 
+        /*
         try {
             socketServer = new WebSocketServer(8887);
             socketServer.start();
         } catch (Exception ex){
             ex.printStackTrace();
         }
+        */
 
         //currentImageType = ImageType.User;
 
@@ -87,6 +90,7 @@ public class Main extends PApplet {
     private void setupKinect() {
         // Setup the Kinect
         kinect = new SimpleOpenNI(this, SimpleOpenNI.RUN_MODE_MULTI_THREADED);
+        //kinect  = new SimpleOpenNI(this, "test.oni");
 
         kinect.enableDepth();
         //kinect.enableRGB();
@@ -97,7 +101,7 @@ public class Main extends PApplet {
 
 
         //size(kinect.depthWidth()+kinect.irWidth(), kinect.depthHeight());
-        kinect.setMirror(false);
+        //kinect.setMirror(false);
     }
 
     public void draw() {
@@ -119,11 +123,7 @@ public class Main extends PApplet {
                 //DrawSkeleton
                 drawSkeleton(userId);
                 //drawUpAngles
-                ArmsAngle(userId);
-                //Draw the user Mass
-                //MassUser(userId);
-                //AngleLeg
-                //LegsAngle(userId);
+                armsAngle(userId);
             }
         }
 
@@ -143,6 +143,10 @@ public class Main extends PApplet {
         }
     }
 
+    /**
+     * Returns the current image to display depending on current dropdown selection
+     * @return
+     */
     private PImage getCurrentImageToDisplay() {
         if (currentImageType == ImageType.User) {
             return kinect.userImage();
@@ -171,8 +175,7 @@ public class Main extends PApplet {
         kinect.convertRealWorldToProjective(var5, var7);
         this.line(var6.x, var6.y, var7.x, var7.y);
 
-        boradcastLine(var6, var7, "leg");
-
+        boradcastline(var6, var7, "leg");
 
         stroke(255 );
         strokeWeight(3);
@@ -235,7 +238,7 @@ public class Main extends PApplet {
         return degrees(PVector.angleBetween(limb, axis));
     }
 
-    public void ArmsAngle(int userId){
+    public void armsAngle(int userId){
         // get the positions of the three joints of our right arm
         PVector rightHand = new PVector();
         kinect.getJointPositionSkeleton(userId,SimpleOpenNI.SKEL_RIGHT_HAND,rightHand);
@@ -328,11 +331,16 @@ public class Main extends PApplet {
         }
     }
 
+
+
+    /*
     void broadcastNetworkMessage(byte[] data){
         if (socketServer!=null){
             socketServer.broadcast(data);
         }
     }
+    */
+
 
     void broadcastNetworkMessage(String message){
         if (socketServer!=null){
@@ -340,7 +348,7 @@ public class Main extends PApplet {
         }
     }
 
-    void boradcastLine(PVector v1, PVector v2, String code){
+    void boradcastline(PVector v1, PVector v2, String code){
         /*
         if (socketServer!=null) {
             socketServer.broadcast(new BasicLimb(v1, v2, code).toJSON());

@@ -18,7 +18,7 @@ int buttonValue = 1;
 
 boolean isOpen;
 
-int myColorBackground = color(0,0,0);
+int myColorBackground = _color(0,0,0);
 
 
 void setup() {

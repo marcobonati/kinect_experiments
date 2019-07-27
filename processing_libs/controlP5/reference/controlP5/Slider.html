@@ -150,7 +150,7 @@ document.getElementsByTagName('html')[0].className = 'isjs';function toggle(dt) 
 import controlP5.*;
 
 ControlP5 cp5;
-int myColor = color(0,0,0);
+int myColor = _color(0,0,0);
 
 int sliderValue = 100;
 int sliderTicks1 = 100;
@@ -221,7 +221,7 @@ void draw() {
 }
 
 void slider(float theColor) {
-  myColor = color(theColor);
+  myColor = _color(theColor);
   println("a slider event. setting background to "+theColor);
 }
 
@@ -586,7 +586,7 @@ created: 2015/03/24 12:25:46
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../controlP5/Slider.html" title="class in controlP5">Slider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../controlP5/Slider.html#setColorTickMark-int-">setColorTickMark</a></span>(int&nbsp;theColor)</code>
-<div class="block">sets the color of tick marks if enabled.</div>
+<div class="block">sets the _color of tick marks if enabled.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -1185,7 +1185,7 @@ class MyButton extends Controller<MyButton> {
 <li class="blockList">
 <h4>setColorTickMark</h4>
 <pre>public&nbsp;<a href="../controlP5/Slider.html" title="class in controlP5">Slider</a>&nbsp;setColorTickMark(int&nbsp;theColor)</pre>
-<div class="block">sets the color of tick marks if enabled. by default the color is set to white.</div>
+<div class="block">sets the _color of tick marks if enabled. by default the _color is set to white.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>theColor</code> - </dd>

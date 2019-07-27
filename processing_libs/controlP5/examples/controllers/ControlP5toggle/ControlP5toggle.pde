@@ -16,7 +16,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int col = color(255);
+int col = _color(255);
 
 boolean toggleValue = false;
 
@@ -67,9 +67,9 @@ void draw() {
 
 void toggle(boolean theFlag) {
   if(theFlag==true) {
-    col = color(255);
+    col = _color(255);
   } else {
-    col = color(100);
+    col = _color(100);
   }
   println("a toggle event.");
 }

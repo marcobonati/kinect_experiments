@@ -274,8 +274,8 @@ public class Tooltip {
 	}
 
 	/**
-	 * adds an offset to the position of the controller
-	 * relative to the mouse cursor's position. default
+	 * adds an offset to the _position of the controller
+	 * relative to the mouse cursor's _position. default
 	 * offset is (10,20)
 	 * 
 	 * @param theX
@@ -344,8 +344,8 @@ public class Tooltip {
 	}
 
 	/**
-	 * sets the background color of the tooltip, the default
-	 * color is a dark grey
+	 * sets the background _color of the tooltip, the default
+	 * _color is a dark grey
 	 * 
 	 * @param theColor
 	 * @return Tooltip
@@ -356,8 +356,8 @@ public class Tooltip {
 	}
 
 	/**
-	 * sets the text color of the tooltip's label, the
-	 * default color is a white
+	 * sets the text _color of the tooltip's label, the
+	 * default _color is a white
 	 * 
 	 * @param theColor
 	 * @return Tooltip

@@ -28,7 +28,7 @@ void setup() {
           .setWidth(200)
           .setItemHeight(20)
           .setBarHeight(20)
-          .setBackgroundColor(color(128))
+          .setBackgroundColor(_color(128))
           .setHeight(100)
           .close()
           ;
@@ -41,7 +41,7 @@ void setup() {
           .setWidth(200)
           .setItemHeight(20)
           .setBarHeight(20)
-          .setBackgroundColor(color(128))
+          .setBackgroundColor(_color(128))
           .setHeight(100)
           .setColor(ControlP5.THEME_RED)
           .close()

@@ -29,9 +29,9 @@ void setup() {
                   .setSize(200, 200)
                   .setFont(createFont("", 10))
                   .setLineHeight(14)
-                  .setColor(color(200))
-                  .setColorBackground(color(0, 100))
-                  .setColorForeground(color(255, 100));
+                  .setColor(_color(200))
+                  .setColorBackground(_color(0, 100))
+                  .setColorForeground(_color(255, 100));
   ;
 
   console = cp5.addConsole(myTextarea);//

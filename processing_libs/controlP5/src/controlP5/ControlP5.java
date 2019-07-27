@@ -535,9 +535,9 @@ public class ControlP5 extends ControlP5Base {
 	 * List<Bang> list = controlP5.getAll(Bang.class);
 	 * println(list);
 	 * for(Bang b:list) {
-	 *   b.setColorForeground(color(255,255,0));
+	 *   b.setColorForeground(_color(255,255,0));
 	 * }
-	 * </pre></code> Here the foreground color of all Bangs
+	 * </pre></code> Here the foreground _color of all Bangs
 	 * is changed to yellow.
 	 * 
 	 * @param <T>
@@ -832,7 +832,7 @@ public class ControlP5 extends ControlP5Base {
 	}
 
 	/**
-	 * sets the active state color of tabs and controllers,
+	 * sets the active state _color of tabs and controllers,
 	 * this cascades down to all known controllers.
 	 */
 	public ControlP5 setColorActive( int theColor ) {
@@ -842,7 +842,7 @@ public class ControlP5 extends ControlP5Base {
 	}
 
 	/**
-	 * sets the foreground color of tabs and controllers,
+	 * sets the foreground _color of tabs and controllers,
 	 * this cascades down to all known controllers.
 	 */
 	public ControlP5 setColorForeground( int theColor ) {
@@ -852,7 +852,7 @@ public class ControlP5 extends ControlP5Base {
 	}
 
 	/**
-	 * sets the background color of tabs and controllers,
+	 * sets the background _color of tabs and controllers,
 	 * this cascades down to all known controllers.
 	 */
 	public ControlP5 setColorBackground( int theColor ) {
@@ -862,7 +862,7 @@ public class ControlP5 extends ControlP5Base {
 	}
 
 	/**
-	 * sets the label color of tabs and controllers, this
+	 * sets the label _color of tabs and controllers, this
 	 * cascades down to all known controllers.
 	 */
 	public ControlP5 setColorCaptionLabel( int theColor ) {
@@ -872,7 +872,7 @@ public class ControlP5 extends ControlP5Base {
 	}
 
 	/**
-	 * sets the value color of controllers, this cascades
+	 * sets the value _color of controllers, this cascades
 	 * down to all known controllers.
 	 */
 	public ControlP5 setColorValueLabel( int theColor ) {

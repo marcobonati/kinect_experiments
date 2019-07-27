@@ -17,11 +17,11 @@ ControlP5 cp5;
 void setup() {
   size(800, 400);
   cp5 = new ControlP5( this );
-  cp5.addColorWheel("c" , 250 , 10 , 200 ).setRGB(color(128,0,255));
+  cp5.addColorWheel("c" , 250 , 10 , 200 ).setRGB(_color(128,0,255));
   noStroke();
 }
   
-int c = color(100);
+int c = _color(100);
 
 void draw() {  
   background(50);

@@ -281,7 +281,7 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 
 	/**
 	 * with setBehavior you can add a ControlBehavior to a controller. A ControlBehavior can be used to e.g.
-	 * automatically change state, function, position, etc.
+	 * automatically change state, function, _position, etc.
 	 * 
 	 * @example ControlP5behavior
 	 * @param theBehavior ControlBehavior
@@ -390,7 +390,7 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 	}
 
 	/**
-	 * get the position of a controller. e.g. Controller.getPosition().x; {@inheritDoc}
+	 * get the _position of a controller. e.g. Controller.getPosition().x; {@inheritDoc}
 	 */
 	@ControlP5.Layout public float[] getPosition( ) {
 		return position;
@@ -406,7 +406,7 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 	}
 
 	/**
-	 * set the position of a controller. The position of a controller is relative.
+	 * set the _position of a controller. The _position of a controller is relative.
 	 * 
 	 * @param theX float
 	 * @param theY float
@@ -428,7 +428,7 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 	@Override @ControlP5.Invisible public T setAbsolutePosition( float[] thePos ) {
 		// TODO
 		// doesnt work properly yet.
-		// absolute position should not be changed from the
+		// absolute _position should not be changed from the
 		// outside anyway.
 		set( absolutePosition , x( thePos ) , y( thePos ) );
 		return me;
@@ -1914,7 +1914,7 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 	 */
 	@ControlP5.Layout public T setDecimalPrecision( int theValue ) {
 		_myDecimalPoints = theValue;
-		// TODO transfer color values of existing label
+		// TODO transfer _color values of existing label
 		int[] t = _myValueLabel.getAlign( );
 		_myValueLabel = new Label( cp5 , "" + ( ( ( adjustValue( _myMax ) ).length( ) > ( adjustValue( _myMin ) ).length( ) ) ? adjustValue( _myMax ) : adjustValue( _myMin ) ) );
 		_myValueLabel.align( t );
@@ -2158,8 +2158,8 @@ public abstract class Controller< T > implements ControllerInterface< T > , CDra
 	 * @return String
 	 */
 	public String getInfo( ) {
-		return "[ type:\tController" + "\nname:\t" + _myName + "\n" + "label:\t" + _myCaptionLabel.getText( ) + "\n" + "id:\t" + _myId + "\n" + "value:\t" + getValue( ) + "\n" + "arrayvalue:\t" + CP.arrayToString( _myArrayValue ) + "\n" + "position:\t"
-		    + position + "\n" + "absolute:\t" + absolutePosition + "\n" + "width:\t" + getWidth( ) + "\n" + "height:\t" + getHeight( ) + "\n" + "color:\t" + getColor( ) + "\n" + "visible:\t" + isVisible + "\n" + "moveable:\t" + isMoveable + " ]";
+		return "[ type:\tController" + "\nname:\t" + _myName + "\n" + "label:\t" + _myCaptionLabel.getText( ) + "\n" + "id:\t" + _myId + "\n" + "value:\t" + getValue( ) + "\n" + "arrayvalue:\t" + CP.arrayToString( _myArrayValue ) + "\n" + "_position:\t"
+		    + position + "\n" + "absolute:\t" + absolutePosition + "\n" + "width:\t" + getWidth( ) + "\n" + "height:\t" + getHeight( ) + "\n" + "_color:\t" + getColor( ) + "\n" + "visible:\t" + isVisible + "\n" + "moveable:\t" + isMoveable + " ]";
 	}
 
 	/**

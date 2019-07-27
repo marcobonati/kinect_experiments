@@ -1,3 +1,7 @@
+package com.magicmirror.kinect.ui;
+
+import processing.core.PFont;
+
 public class UIConstants {
 
     public static int BORDER_SIZE = 10;
@@ -17,5 +21,7 @@ public class UIConstants {
 
 
     public static String UI_TAG_CHK_SHOW_IMAGE = "CHK_SHOW_IMAGE";
+
+    public static PFont MAIN_FONT = null;
 
 }

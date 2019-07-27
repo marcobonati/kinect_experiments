@@ -235,7 +235,7 @@ public class DropdownList extends Controller< DropdownList > implements ControlL
 		item.put( "name" , theName );
 		item.put( "text" , theName );
 		item.put( "value" , theValue );
-		item.put( "color" , getColor( ) );
+		item.put( "_color" , getColor( ) );
 		item.put( "view" , new CDrawable( ) {
 			@Override public void draw( PGraphics theGraphics ) {
 			}
@@ -411,7 +411,7 @@ public class DropdownList extends Controller< DropdownList > implements ControlL
 				int m1 = c.items.size( ) > c.itemRange ? ( c.itemIndexOffset + c.itemRange ) : c.items.size( );
 				for ( int i = m0 ; i < m1 ; i++ ) {
 					Map< String , Object > item = c.items.get( i );
-					CColor color = ( CColor ) item.get( "color" );
+					CColor color = ( CColor ) item.get( "_color" );
 					g.fill( ( b( item.get( "state" ) ) ) ? color.getActive( ) : ( i == c.itemHover ) ? ( c.isMousePressed ? color.getActive( ) : color.getForeground( ) ) : color.getBackground( ) );
 					g.rect( 0 , 0 , c.getWidth( ) , c.itemHeight - 1 );
 					c.getValueLabel( ).set( item.get( "text" ).toString( ) ).draw( g , 4 , c.itemHeight / 2 );

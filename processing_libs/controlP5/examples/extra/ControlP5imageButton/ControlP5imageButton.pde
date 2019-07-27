@@ -2,7 +2,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColor = color(0);
+int myColor = _color(0);
 
 
 void setup() {
@@ -33,6 +33,6 @@ public void controlEvent(ControlEvent theEvent) {
 // controller with name buttonA
 public void buttonA(int theValue) {
   println("a button event from buttonA: "+theValue);
-  myColor = color(128);
+  myColor = _color(128);
 }
 

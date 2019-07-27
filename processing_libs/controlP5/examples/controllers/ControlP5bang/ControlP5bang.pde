@@ -16,10 +16,10 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0, 0, 0);
+int myColorBackground = _color(0, 0, 0);
 
-color[] col = new color[] {
-  color(100), color(150), color(200), color(250)
+_color[] col = new _color[] {
+  _color(100), _color(150), _color(200), _color(250)
 };
 
 
@@ -56,14 +56,14 @@ void draw() {
 
 public void bang() {
   int theColor = (int)random(255);
-  myColorBackground = color(theColor);
+  myColorBackground = _color(theColor);
   println("### bang(). a bang event. setting background to "+theColor);
 }
 
 public void controlEvent(ControlEvent theEvent) {
   for (int i=0;i<col.length;i++) {
     if (theEvent.getController().getName().equals("bang"+i)) {
-      col[i] = color(random(255));
+      col[i] = _color(random(255));
     }
   }
   

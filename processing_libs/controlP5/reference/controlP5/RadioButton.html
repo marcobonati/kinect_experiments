@@ -157,7 +157,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0,0,0);
+int myColorBackground = _color(0,0,0);
 
 RadioButton r1, r2;
 
@@ -168,9 +168,9 @@ void setup() {
   r1 = cp5.addRadioButton("radioButton")
          .setPosition(100,180)
          .setSize(40,20)
-         .setColorForeground(color(120))
-         .setColorActive(color(255))
-         .setColorLabel(color(255))
+         .setColorForeground(_color(120))
+         .setColorActive(_color(255))
+         .setColorLabel(_color(255))
          .setItemsPerRow(5)
          .setSpacingColumn(50)
          .addItem("50",1)
@@ -181,7 +181,7 @@ void setup() {
          ;
      
      for(Toggle t:r1.getItems()) {
-       t.getCaptionLabel().setColorBackground(color(255,80));
+       t.getCaptionLabel().setColorBackground(_color(255,80));
        t.getCaptionLabel().getStyle().moveMargin(-7,0,0,-3);
        t.getCaptionLabel().getStyle().movePadding(7,0,0,3);
        t.getCaptionLabel().getStyle().backgroundWidth = 45;
@@ -215,7 +215,7 @@ void controlEvent(ControlEvent theEvent) {
       print(int(theEvent.getGroup().getArrayValue()[i]));
     }
     println("\t "+theEvent.getValue());
-    myColorBackground = color(int(theEvent.getGroup().getValue()*50),0,0);
+    myColorBackground = _color(int(theEvent.getGroup().getValue()*50),0,0);
   }
 }
 

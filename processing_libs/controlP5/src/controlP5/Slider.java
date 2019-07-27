@@ -448,7 +448,7 @@ public class Slider extends Controller< Slider > {
 	}
 
 	/**
-	 * sets the color of tick marks if enabled. by default the color is set to white.
+	 * sets the _color of tick marks if enabled. by default the _color is set to white.
 	 * 
 	 * @param theColor
 	 * @return Slider

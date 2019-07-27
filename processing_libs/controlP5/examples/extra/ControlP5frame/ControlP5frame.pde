@@ -76,21 +76,21 @@ class ControlFrame extends PApplet {
        .setRange(0, 255)
        .setValue(200);
        
-    cp5.addNumberbox("color-red")
+    cp5.addNumberbox("_color-red")
        .plugTo(parent, "c0")
        .setRange(0, 255)
        .setValue(255)
        .setPosition(100, 10)
        .setSize(100, 20);
        
-    cp5.addNumberbox("color-green")
+    cp5.addNumberbox("_color-green")
        .plugTo(parent, "c1")
        .setRange(0, 255)
        .setValue(128)
        .setPosition(100, 70)
        .setSize(100, 20);
        
-    cp5.addNumberbox("color-blue")
+    cp5.addNumberbox("_color-blue")
        .plugTo(parent, "c2")
        .setRange(0, 255)
        .setValue(0)

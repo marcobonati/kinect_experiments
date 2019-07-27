@@ -11,7 +11,7 @@
 2013-09-09  Andreas Schlegel
       * javascript version
       * textinput on android
-      * color picker used for clicks-and-strokes
+      * _color picker used for clicks-and-strokes
       * rendering into pgraphics
       * add colorwheel
       * add ControlFrame with customizable render access
@@ -39,7 +39,7 @@
       * Textfield: implement new version of textfield
       * TextArea: implement new version of TextArea
       * Label: implement modifications so that text rendering for P3D works properly
-      * picking: use an image and color-coding for picking controllers instead mouse-coordinates against rectangular boxes.
+      * picking: use an image and _color-coding for picking controllers instead mouse-coordinates against rectangular boxes.
 
 
 
@@ -67,7 +67,7 @@ http://processing.org/discourse/yabb_beta/YaBB.cgi?board=LibraryProblems;action=
 * loading and saving
 * multilist, range, matrix dont load from xml file.
 * colorstyle does not save and load.
-* labels dont save properly, background color is not saved.
+* labels dont save properly, background _color is not saved.
 * matrix needs to be redone. develop whole new concept for matrix / synthesizer.
 * multitouch support
 * controlWindow: add feedback when closing window. see email from henri 5 january 2009

@@ -26,7 +26,7 @@ void setup() {
      .setFontIcons(#00f205,#00f204)
      //.setScale(0.9,1)
      .setSwitch(true)
-     .setColorBackground(color(255,100))
+     .setColorBackground(_color(255,100))
      .hideBackground()
      ;  
 }

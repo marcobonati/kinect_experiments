@@ -20,15 +20,15 @@ void setup() {
   size(400, 600);
   smooth();
   noStroke();
-  col = color(0);
-  colEllipse = color(0,255,90);  
+  col = _color(0);
+  colEllipse = _color(0,255,90);
   cp5 = new ControlP5(this);
   
   // press key 1 to change background to white             
-  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {col = color(255);}}, '1');
+  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {col = _color(255);}}, '1');
   
   // press key 2 to change background to black
-  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {col = color(0);}}, '2');
+  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {col = _color(0);}}, '2');
   
   // press key 1 and ALT to make circles visible
   cp5.mapKeyFor(new ControlKey() {public void keyEvent() {visible = true;}}, ALT,'1');
@@ -36,8 +36,8 @@ void setup() {
   // press key 2 and ALT to hide circles
   cp5.mapKeyFor(new ControlKey() {public void keyEvent() {visible = false;}}, ALT,'2');
 
-  // press key 1 and ALT and SHIFT to change the color of circles
-  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {colEllipse = color(random(255));}}, ALT,'1',SHIFT);  
+  // press key 1 and ALT and SHIFT to change the _color of circles
+  cp5.mapKeyFor(new ControlKey() {public void keyEvent() {colEllipse = _color(random(255));}}, ALT,'1',SHIFT);
 }
   
 void draw() {

@@ -31,8 +31,8 @@ void setup() {
      .setGap(10, 1)
      .setInterval(200)
      .setMode(ControlP5.MULTIPLES)
-     .setColorBackground(color(120))
-     .setBackground(color(40))
+     .setColorBackground(_color(120))
+     .setBackground(_color(40))
      ;
   
   cp5.getController("myMatrix").getCaptionLabel().alignX(CENTER);

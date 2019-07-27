@@ -68,7 +68,7 @@ void createMessageBox() {
   // create a group to store the messageBox elements
   messageBox = cp5.addGroup("messageBox",width/2 - 150,100,300);
   messageBox.setBackgroundHeight(120);
-  messageBox.setBackgroundColor(color(0,100));
+  messageBox.setBackgroundColor(_color(0,100));
   messageBox.hideBar();
   
   // add a TextLabel to the messageBox.
@@ -80,16 +80,16 @@ void createMessageBox() {
   Textfield f = cp5.addTextfield("inputbox",20,36,260,20);
   f.getCaptionLabel().setVisible(false);
   f.moveTo(messageBox);
-  f.setColorForeground(color(20));
-  f.setColorBackground(color(20));
-  f.setColorActive(color(100));
+  f.setColorForeground(_color(20));
+  f.setColorBackground(_color(20));
+  f.setColorActive(_color(100));
   // add the OK button to the messageBox.
   // the name of the button corresponds to function buttonOK
   // below and will be triggered when pressing the button.
   Button b1 = cp5.addButton("buttonOK",0,65,80,80,24);
   b1.moveTo(messageBox);
-  b1.setColorBackground(color(40));
-  b1.setColorActive(color(20));
+  b1.setColorBackground(_color(40));
+  b1.setColorActive(_color(20));
   // by default setValue would trigger function buttonOK, 
   // therefore we disable the broadcasting before setting
   // the value and enable broadcasting again afterwards.
@@ -112,8 +112,8 @@ void createMessageBox() {
   b2.setValue(0);
   b2.setBroadcast(true);
   b2.setCaptionLabel("Cancel");
-  b2.setColorBackground(color(40));
-  b2.setColorActive(color(20));
+  b2.setColorBackground(_color(40));
+  b2.setColorActive(_color(20));
   //b2.captionLabel().toUpperCase(false);
   // centering of a label needs to be done manually 
   // with marginTop and marginLeft

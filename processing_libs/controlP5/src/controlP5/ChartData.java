@@ -26,7 +26,7 @@ package controlP5;
  */
 
 /**
- * Used by Chart, single chart data is stored here including value, (label) text, and color.
+ * Used by Chart, single chart data is stored here including value, (label) text, and _color.
  */
 public class ChartData {
 

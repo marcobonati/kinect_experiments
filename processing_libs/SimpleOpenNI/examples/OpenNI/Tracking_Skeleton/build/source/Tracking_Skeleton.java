@@ -107,7 +107,7 @@ public void onNewUser(SimpleOpenNI kinect, int userID){
 }
   public void settings() {  size(640, 480); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "--present", "--window-color=#666666", "--stop-color=#cccccc", "Tracking_Skeleton" };
+    String[] appletArgs = new String[] { "--present", "--window-_color=#666666", "--stop-_color=#cccccc", "Tracking_Skeleton" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

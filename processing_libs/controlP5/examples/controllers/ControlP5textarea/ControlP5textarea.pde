@@ -24,9 +24,9 @@ void setup() {
                   .setSize(200,200)
                   .setFont(createFont("arial",12))
                   .setLineHeight(14)
-                  .setColor(color(128))
-                  .setColorBackground(color(255,100))
-                  .setColorForeground(color(255,100));
+                  .setColor(_color(128))
+                  .setColorBackground(_color(255,100))
+                  .setColorForeground(_color(255,100));
                   ;
   myTextarea.setText("Lorem Ipsum is simply dummy text of the printing and typesetting"
                     +" industry. Lorem Ipsum has been the industry's standard dummy text"

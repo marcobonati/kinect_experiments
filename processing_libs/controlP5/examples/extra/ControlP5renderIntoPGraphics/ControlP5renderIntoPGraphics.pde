@@ -21,7 +21,7 @@ void setup() {
   panel2 = createGraphics( 200 , height/2 );
   c1 = new ControlP5( this );
   c1.enableShortcuts();
-  c1.setBackground( color( 0 , 50 ) );
+  c1.setBackground( _color( 0 , 50 ) );
   c1.addButton("hello").setSize(200,20).setPosition( 0 , 0 );
   c1.addButton("world").setSize(200,100).setPosition( 0 , 70 );
   c1.addSlider("slider").setSize(50,20).setPosition( 0 , 40 );
@@ -29,7 +29,7 @@ void setup() {
   
   c2 = new ControlP5( this );
   c2.enableShortcuts();
-  c2.setBackground( color( 0 , 50 ) );
+  c2.setBackground( _color( 0 , 50 ) );
   c2.addButton("hello").setSize(200,20).setPosition( 0 , 0 );
   c2.addButton("world").setSize(200,100).setPosition( 0 , 70 );
   c2.addSlider("slider").setSize(50,20).setPosition( 0 , 40 );

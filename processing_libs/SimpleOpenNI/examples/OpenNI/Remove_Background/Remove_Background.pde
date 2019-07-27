@@ -33,7 +33,7 @@ void draw() {
       if (userMap[i] != 0) {
       //pixels[i] = depthImage.pixels[i];
       // make it green
-      pixels[i] = color(0, 255, 0);  
+      pixels[i] = _color(0, 255, 0);
       }
     }
      // display the changed pixel array

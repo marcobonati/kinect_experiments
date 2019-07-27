@@ -15,7 +15,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0,0,0);
+int myColorBackground = _color(0,0,0);
 int knobValue = 100;
 
 Knob myKnobA;
@@ -44,9 +44,9 @@ void setup() {
                .setNumberOfTickMarks(10)
                .setTickMarkLength(4)
                .snapToTickMarks(true)
-               .setColorForeground(color(255))
-               .setColorBackground(color(0, 160, 100))
-               .setColorActive(color(255,255,0))
+               .setColorForeground(_color(255))
+               .setColorBackground(_color(0, 160, 100))
+               .setColorActive(_color(255,255,0))
                .setDragDirection(Knob.HORIZONTAL)
                ;
 }
@@ -61,7 +61,7 @@ void draw() {
 
 
 void knob(int theValue) {
-  myColorBackground = color(theValue);
+  myColorBackground = _color(theValue);
   println("a knob event. setting background to "+theValue);
 }
 

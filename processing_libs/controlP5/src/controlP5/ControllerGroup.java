@@ -918,8 +918,8 @@ public abstract class ControllerGroup< T > implements ControllerInterface< T > ,
 	}
 
 	public String getInfo( ) {
-		return "type:\tControllerGroup" + "\nname:\t" + _myName + "\n" + "label:\t" + _myLabel.getText( ) + "\n" + "id:\t" + _myId + "\n" + "value:\t" + _myValue + "\n" + "arrayvalue:\t" + CP.arrayToString( _myArrayValue ) + "\n" + "position:\t"
-		    + position + "\n" + "absolute:\t" + absolutePosition + "\n" + "width:\t" + getWidth( ) + "\n" + "height:\t" + getHeight( ) + "\n" + "color:\t" + getColor( ) + "\n" + "visible:\t" + isVisible + "\n" + "moveable:\t" + isMoveable + "\n";
+		return "type:\tControllerGroup" + "\nname:\t" + _myName + "\n" + "label:\t" + _myLabel.getText( ) + "\n" + "id:\t" + _myId + "\n" + "value:\t" + _myValue + "\n" + "arrayvalue:\t" + CP.arrayToString( _myArrayValue ) + "\n" + "_position:\t"
+		    + position + "\n" + "absolute:\t" + absolutePosition + "\n" + "width:\t" + getWidth( ) + "\n" + "height:\t" + getHeight( ) + "\n" + "_color:\t" + getColor( ) + "\n" + "visible:\t" + isVisible + "\n" + "moveable:\t" + isMoveable + "\n";
 	}
 
 	/**

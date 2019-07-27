@@ -30,7 +30,7 @@ import processing.core.PGraphics;
 
 /**
  * The Slider2D allows to control a handle within a 2D area. This controller returns an arrayValue
- * with the current xy position of its handle.
+ * with the current xy _position of its handle.
  * 
  * @author andreas schlegel
  * 

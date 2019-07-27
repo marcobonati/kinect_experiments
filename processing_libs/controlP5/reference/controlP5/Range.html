@@ -142,7 +142,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0,0,0);
+int myColorBackground = _color(0,0,0);
 
 int colorMin = 100;
 
@@ -163,8 +163,8 @@ void setup() {
              .setRangeValues(50,100)
              // after the initialization we turn broadcast back on again
              .setBroadcast(true)
-             .setColorForeground(color(255,40))
-             .setColorBackground(color(255,40))  
+             .setColorForeground(_color(255,40))
+             .setColorBackground(_color(255,40))
              ;
              
   noStroke();             

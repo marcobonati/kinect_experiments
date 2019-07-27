@@ -21,7 +21,7 @@ ControlP5 cp5;
 
 Accordion accordion;
 
-color c = color(0, 160, 100);
+_color c = _color(0, 160, 100);
 
 void setup() {
   size(400, 600);
@@ -36,7 +36,7 @@ void gui() {
   
   // group number 1, contains 2 bangs
   Group g1 = cp5.addGroup("myGroup1")
-                .setBackgroundColor(color(0, 64))
+                .setBackgroundColor(_color(0, 64))
                 .setBackgroundHeight(150)
                 ;
   
@@ -49,7 +49,7 @@ void gui() {
      
   // group number 2, contains a radiobutton
   Group g2 = cp5.addGroup("myGroup2")
-                .setBackgroundColor(color(0, 64))
+                .setBackgroundColor(_color(0, 64))
                 .setBackgroundHeight(150)
                 ;
   
@@ -62,14 +62,14 @@ void gui() {
      .addItem("green", 2)
      .addItem("blue", 3)
      .addItem("grey", 4)
-     .setColorLabel(color(255))
+     .setColorLabel(_color(255))
      .activate(2)
      .moveTo(g2)
      ;
 
   // group number 3, contains a bang and a slider
   Group g3 = cp5.addGroup("myGroup3")
-                .setBackgroundColor(color(0, 64))
+                .setBackgroundColor(_color(0, 64))
                 .setBackgroundHeight(150)
                 ;
   
@@ -127,17 +127,17 @@ void gui() {
 
 void radio(int theC) {
   switch(theC) {
-    case(0):c=color(0,200);break;
-    case(1):c=color(255,0,0,200);break;
-    case(2):c=color(0, 200, 140,200);break;
-    case(3):c=color(0, 128, 255,200);break;
-    case(4):c=color(50,128);break;
+    case(0):c=_color(0,200);break;
+    case(1):c=_color(255,0,0,200);break;
+    case(2):c=_color(0, 200, 140,200);break;
+    case(3):c=_color(0, 128, 255,200);break;
+    case(4):c=_color(50,128);break;
   }
 } 
 
 
 void shuffle() {
-  c = color(random(255),random(255),random(255),random(128,255));
+  c = _color(random(255),random(255),random(255),random(128,255));
 }
 
 

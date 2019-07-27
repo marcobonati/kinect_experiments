@@ -261,7 +261,7 @@ public class Textarea extends ControllerGroup< Textarea > implements ControlList
 	}
 
 	/**
-	 * set the text color of the textarea.
+	 * set the text _color of the textarea.
 	 * 
 	 * @param theColor
 	 *            int

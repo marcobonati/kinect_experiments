@@ -59,8 +59,8 @@ void style(String theControllerName) {
   // shift the caption label up by 4px
   c.getCaptionLabel().getStyle().setMargin(-4,0,0,0); 
   
-  // set the background color of the caption label
-  c.getCaptionLabel().setColorBackground(color(10,20,30,140));
+  // set the background _color of the caption label
+  c.getCaptionLabel().setColorBackground(_color(10,20,30,140));
 }
 
 void draw() {

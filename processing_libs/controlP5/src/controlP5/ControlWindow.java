@@ -193,8 +193,8 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * Sets the position of the tab bar which is set to 0,0
-	 * by default. to move the tabs to y-position 100, use
+	 * Sets the _position of the tab bar which is set to 0,0
+	 * by default. to move the tabs to y-_position 100, use
 	 * cp5.getWindow().setPositionOfTabs(0,100);
 	 *
 	 */
@@ -713,7 +713,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the color for the controller while active.
+	 * set the _color for the controller while active.
 	 */
 	public ControlWindow setColorActive( int theColor ) {
 		color.setActive( theColor );
@@ -724,7 +724,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the foreground color of the controller.
+	 * set the foreground _color of the controller.
 	 */
 	public ControlWindow setColorForeground( int theColor ) {
 		color.setForeground( theColor );
@@ -735,7 +735,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the background color of the controller.
+	 * set the background _color of the controller.
 	 */
 	public ControlWindow setColorBackground( int theColor ) {
 		color.setBackground( theColor );
@@ -746,7 +746,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the color of the text label of the controller.
+	 * set the _color of the text label of the controller.
 	 */
 	public ControlWindow setColorLabel( int theColor ) {
 		color.setCaptionLabel( theColor );
@@ -757,7 +757,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the color of the values.
+	 * set the _color of the values.
 	 */
 	public ControlWindow setColorValue( int theColor ) {
 		color.setValueLabel( theColor );
@@ -768,7 +768,7 @@ public final class ControlWindow {
 	}
 
 	/**
-	 * set the background color of the control window.
+	 * set the background _color of the control window.
 	 */
 	public ControlWindow setBackground( int theValue ) {
 		background = theValue;
@@ -800,7 +800,7 @@ public final class ControlWindow {
 
 	/**
 	 * by default the background of a controlWindow is
-	 * filled with a background color every frame. to enable
+	 * filled with a background _color every frame. to enable
 	 * or disable the background from drawing, use
 	 * setDrawBackgorund(true/false).
 	 *
@@ -879,12 +879,12 @@ public final class ControlWindow {
 
 	/**
 	 * A pointer by default is linked to the mouse and
-	 * stores the x and y position as well as the pressed
+	 * stores the x and y _position as well as the pressed
 	 * and released state. The pointer can be accessed by
 	 * its getter method {@link ControlWindow#getPointer()}.
 	 * Then use
 	 * {@link controlP5.ControlWindow#set(int, int)} to
-	 * alter its position or invoke {
+	 * alter its _position or invoke {
 	 * {@link controlP5.ControlWindow#pressed()} or
 	 * {@link controlP5.ControlWindow#released()} to change
 	 * its state. To disable the mouse and enable the

@@ -37,7 +37,7 @@
 import controlP5.*;
 
 ControlP5 cp5;
-public int myColor = color(0, 0, 0);
+public int myColor = _color(0, 0, 0);
 
 public int sliderValue = 100;
 public int sliderTicks1 = 100;
@@ -98,7 +98,7 @@ void draw() {
 }
 
 public void slider(float theColor) {
-  myColor = color(theColor);
+  myColor = _color(theColor);
   println("a slider event. setting background to "+theColor);
 }
 

@@ -40,7 +40,7 @@ class TestCanvas extends Canvas {
   public void draw(PGraphics pg) {
     n += 0.01;
     pg.ellipseMode(CENTER);
-    pg.fill(lerpColor(color(0,100,200),color(0,200,100),map(sin(n),-1,1,0,1)));
+    pg.fill(lerpColor(_color(0,100,200),_color(0,200,100),map(sin(n),-1,1,0,1)));
     pg.rect(0,0,200,200);
     pg.fill(255,150);
     a+=0.01;

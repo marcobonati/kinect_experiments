@@ -68,7 +68,7 @@ void draw()
   int     steps   = 4;  // to speed up the drawing, draw every third point
   int     index;
   PVector realWorldPoint;
-  color   pixelColor;
+  _color   pixelColor;
  
   strokeWeight((float)steps/2);
 
@@ -83,7 +83,7 @@ void draw()
       index = x + y * context.depthWidth();
       if(depthMap[index] > 0)
       { 
-        // get the color of the point
+        // get the _color of the point
         pixelColor = rgbImage.pixels[index];
         stroke(pixelColor);
         

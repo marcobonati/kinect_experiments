@@ -12,12 +12,12 @@
 import SimpleOpenNI.*;
 
 SimpleOpenNI  context;
-color[]       userClr = new color[]{ color(255,0,0),
-                                     color(0,255,0),
-                                     color(0,0,255),
-                                     color(255,255,0),
-                                     color(255,0,255),
-                                     color(0,255,255)
+_color[]       userClr = new _color[]{ _color(255,0,0),
+                                     _color(0,255,0),
+                                     _color(0,0,255),
+                                     _color(255,255,0),
+                                     _color(255,0,255),
+                                     _color(0,255,255)
                                    };
 PVector com = new PVector();                                   
 PVector com2d = new PVector();                                   

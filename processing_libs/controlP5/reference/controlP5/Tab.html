@@ -141,7 +141,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(128);
+int myColorBackground = _color(128);
 
 int sliderValue = 100;
 
@@ -154,9 +154,9 @@ void setup() {
   // add a second tab with name 'extra'
   
   cp5.addTab("extra")
-     .setColorBackground(color(0, 160, 100))
-     .setColorLabel(color(255))
-     .setColorActive(color(255,128,0))
+     .setColorBackground(_color(0, 160, 100))
+     .setColorLabel(_color(255))
+     .setColorActive(_color(255,128,0))
      ;
      
   // if you want to receive a controlEvent when
@@ -235,7 +235,7 @@ void controlEvent(ControlEvent theControlEvent) {
 }
 
 void slider(int theColor) {
-  myColorBackground = color(theColor);
+  myColorBackground = _color(theColor);
   println("a slider event. setting background to "+theColor);
 }
 

@@ -7,7 +7,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0, 0, 0);
+int myColorBackground = _color(0, 0, 0);
 
 ControlWindow controlWindow;
 
@@ -38,7 +38,7 @@ void setup() {
 
 //  controlWindow = cp5.addControlWindow("controlP5window", 100, 100, 400, 200)
 //    .hideCoordinates()
-//    .setBackground(color(40))
+//    .setBackground(_color(40))
 //    ;
 
   cp5.addSlider("sliderValue")

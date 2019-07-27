@@ -1,3 +1,5 @@
+package com.magicmirror.kinect.ui;
+
 import controlP5.DropdownList;
 import processing.core.PApplet;
 
@@ -6,7 +8,7 @@ public class UIUtils extends PApplet {
 
     public DropdownList customize(DropdownList ddl, String title, String[] items) {
         // a convenience function to customize a DropdownList
-        //ddl.setBackgroundColor(color(190));
+        //ddl.setBackgroundColor(_color(190));
         ddl.setItemHeight(20);
         ddl.setBarHeight(20);
         ddl.getCaptionLabel().set(title);

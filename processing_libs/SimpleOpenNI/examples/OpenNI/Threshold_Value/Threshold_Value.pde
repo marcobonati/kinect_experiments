@@ -15,7 +15,7 @@ void setup()
  
   // make the sketch size a that of kinect sample
   size(640, 480);
-  // set a background color
+  // set a background _color
   background(0);
   // instantatiate the SimpleOpenNI object
   //paremeter : is the current context
@@ -58,11 +58,11 @@ void draw()
       if (depthVals[loc] > 610 && depthVals[loc]< 900 )
       {
         //let the pixel value in the result image be white
-        result.pixels[loc] = color(255);
+        result.pixels[loc] = _color(255);
       }
       else
       //otherwise let the pixel value in the result image be white
-       result.pixels[loc] = color(0);
+       result.pixels[loc] = _color(0);
  
     }
   }

@@ -24,7 +24,7 @@ void setup()
   // enable skeleton generation for all joints
   kinect.enableUser();
  
-  // turn on depth-color alignment 
+  // turn on depth-_color alignment
   kinect.alternativeViewPointDepthToImage();
   background(0);
   }
@@ -35,9 +35,9 @@ void draw()
   background(0);
   kinect.update();
  
-  // get the Kinect color image
+  // get the Kinect _color image
   PImage rgbImage = kinect.rgbImage(); 
-  // prepare the color pixels 
+  // prepare the _color pixels
   rgbImage.loadPixels();
  
  
@@ -51,12 +51,12 @@ void draw()
     {
       if(userMap[i]!=0)
       {
-         // set the sketch pixel to the color pixel
+         // set the sketch pixel to the _color pixel
           pixels[i] = rgbImage.pixels[i];
       }
       else
       {
-        pixels[i] = color(0);
+        pixels[i] = _color(0);
       }
     }
    updatePixels();

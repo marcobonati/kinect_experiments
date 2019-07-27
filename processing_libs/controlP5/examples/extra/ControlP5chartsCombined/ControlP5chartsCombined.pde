@@ -28,17 +28,17 @@ void setup() {
                .setView(Chart.BAR) // use Chart.LINE, Chart.PIE, Chart.AREA, Chart.BAR_CENTERED
                ;
 
-  myChart.getColor().setBackground(color(255, 100));
+  myChart.getColor().setBackground(_color(255, 100));
 
 
   myChart.addDataSet("world");
-  myChart.setColors("world", color(255,0,255),color(255,0,0));
+  myChart.setColors("world", _color(255,0,255),_color(255,0,0));
   myChart.setData("world", new float[4]);
 
   myChart.setStrokeWeight(1.5);
 
   myChart.addDataSet("earth");
-  myChart.setColors("earth", color(255), color(0, 255, 0));
+  myChart.setColors("earth", _color(255), _color(0, 255, 0));
   myChart.updateData("earth", 1, 2, 10, 3);
 
 }

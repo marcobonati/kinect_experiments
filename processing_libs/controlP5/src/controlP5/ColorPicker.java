@@ -31,7 +31,7 @@ import java.lang.reflect.Method;
 import processing.core.PGraphics;
 
 /**
- * A simple color picker using sliders to adjust RGBA values.
+ * A simple _color picker using sliders to adjust RGBA values.
  * 
  * @example controllers/ControlP5colorPicker
  */
@@ -225,7 +225,7 @@ public class ColorPicker extends ControlGroup< ColorPicker > {
 		}
 	}
 
-	// public ColorPicker setColor(int... theArray) {
+	// public ColorPicker set_color(int... theArray) {
 	// switch (theArray.length) {
 	// case (1):
 	// setArrayValue(new float[] { theArray[0], theArray[0], theArray[0], getColorValue() >> 24 &

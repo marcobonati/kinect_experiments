@@ -62,7 +62,7 @@ void setup() {
 
 void customize(DropdownList ddl) {
   // a convenience function to customize a DropdownList
-  ddl.setBackgroundColor(color(190));
+  ddl.setBackgroundColor(_color(190));
   ddl.setItemHeight(20);
   ddl.setBarHeight(15);
   ddl.getCaptionLabel().set("dropdown");
@@ -70,8 +70,8 @@ void customize(DropdownList ddl) {
     ddl.addItem("item "+i, i);
   }
   //ddl.scroll(0);
-  ddl.setColorBackground(color(60));
-  ddl.setColorActive(color(255, 128));
+  ddl.setColorBackground(_color(60));
+  ddl.setColorActive(_color(255, 128));
 }
 
 
@@ -93,7 +93,7 @@ void keyPressed() {
   else if (key=='4') {
     // set the height of a pulldown menu item, should always be a fraction of the pulldown menu
     d1.setItemHeight(12);
-    d1.setBackgroundColor(color(255));
+    d1.setBackgroundColor(_color(255));
   } 
   else if (key=='5') {
     // add new items to the pulldown menu

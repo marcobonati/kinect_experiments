@@ -38,7 +38,7 @@ void setup() {
 
 }
 
-color hover = color(0, 230, 150);
+_color hover = _color(0, 230, 150);
 
 void draw() {
   background(ControlP5.BLACK);
@@ -52,21 +52,21 @@ void draw() {
   
   ellipse(45,50,50,50);
   
-  // check if the mouse is hovering controller slider1 and set the color accordingly
-  fill(cp5.isMouseOver(cp5.getController("slider1")) ? hover:color(slider1));
+  // check if the mouse is hovering controller slider1 and set the _color accordingly
+  fill(cp5.isMouseOver(cp5.getController("slider1")) ? hover:_color(slider1));
   rect(250, 100, 200, 20);
   
   
-  fill(cp5.isMouseOver(cp5.getController("slider2")) ? hover:color(slider2));
+  fill(cp5.isMouseOver(cp5.getController("slider2")) ? hover:_color(slider2));
   rect(250, 150, 200, 20);
   
-  fill(cp5.isMouseOver(cp5.getController("b1")) ? hover:color(128));
+  fill(cp5.isMouseOver(cp5.getController("b1")) ? hover:_color(128));
   ellipse(30, 330, 20, 20);
   
-  fill(cp5.isMouseOver(cp5.getController("b2")) ? hover:color(128));
+  fill(cp5.isMouseOver(cp5.getController("b2")) ? hover:_color(128));
   ellipse(110, 330, 20, 20);
   
-  fill(cp5.isMouseOver(cp5.getController("myList")) ? hover:color(128));
+  fill(cp5.isMouseOver(cp5.getController("myList")) ? hover:_color(128));
   ellipse(260, 230, 20, 20);
   
 }

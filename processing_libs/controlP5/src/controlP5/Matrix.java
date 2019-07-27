@@ -33,7 +33,7 @@ import processing.core.PGraphics;
 
 /**
  * A matrix is a 2d array with a pointer that traverses through the matrix in a timed interval. if
- * an item of a matrix-column is active, the x and y position of the corresponding cell will trigger
+ * an item of a matrix-column is active, the x and y _position of the corresponding cell will trigger
  * an event and notify the program. see the ControlP5matrix example for more information.
  * 
  * @example controllers/ControlP5matrix
@@ -404,11 +404,11 @@ public class Matrix extends Controller< Matrix > {
 			}
 			if ( isInside( ) ) {
 				// TODO
-				// int x = (int) ((theGraphics.mouseX - position.x) / stepX);
-				// int y = (int) ((theGraphics.mouseY - position.y) / stepY);
+				// int x = (int) ((theGraphics.mouseX - _position.x) / stepX);
+				// int y = (int) ((theGraphics.mouseY - _position.y) / stepY);
 				// if (x >= 0 && x < _myCellX && y >= 0 && y < _myCellY) {
-				// theGraphics.fill(_myCells[x][y] == 1 ? color.getActive() :
-				// color.getForeground());
+				// theGraphics.fill(_myCells[x][y] == 1 ? _color.getActive() :
+				// _color.getForeground());
 				// theGraphics.rect(x * stepX, y * stepY, stepX - gapX, stepY - gapY);
 				// }
 			}

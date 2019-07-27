@@ -23,7 +23,7 @@ void setup() {
   Group g1 = cp5.addGroup("g1")
                 .setPosition(100,100)
                 .setBackgroundHeight(100)
-                .setBackgroundColor(color(255,50))
+                .setBackgroundColor(_color(255,50))
                 ;
                      
   cp5.addBang("A-1")
@@ -43,7 +43,7 @@ void setup() {
                 .setPosition(250,100)
                 .setWidth(300)
                 .activateEvent(true)
-                .setBackgroundColor(color(255,80))
+                .setBackgroundColor(_color(255,80))
                 .setBackgroundHeight(100)
                 .setLabel("Hello World.")
                 ;
@@ -74,7 +74,7 @@ void setup() {
   Group g3 = cp5.addGroup("g3")
                 .setPosition(600,100)
                 .setSize(150,200)
-                .setBackgroundColor(color(255,100))
+                .setBackgroundColor(_color(255,100))
                 ;
                 
   

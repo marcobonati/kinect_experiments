@@ -1,8 +1,8 @@
 /**
- * ControlP5 Color picker. a simple color picker, 
- * 4 horizontal sliders controlling the RGBA channels of a color.
- * to grab the current color value, use function getColorValue() of
- * the color picker.
+ * ControlP5 Color picker. a simple _color picker,
+ * 4 horizontal sliders controlling the RGBA channels of a _color.
+ * to grab the current _color value, use function getColorValue() of
+ * the _color picker.
  *
  * find a list of public methods available for the ColorPicker Controller 
  * at the bottom of this sketch's source code
@@ -23,7 +23,7 @@ void setup() {
   cp5 = new ControlP5(this);
   cp = cp5.addColorPicker("picker")
           .setPosition(60, 100)
-          .setColorValue(color(255, 128, 0, 128))
+          .setColorValue(_color(255, 128, 0, 128))
           ;
 }
 
@@ -41,12 +41,12 @@ public void controlEvent(ControlEvent c) {
     int g = int(c.getArrayValue(1));
     int b = int(c.getArrayValue(2));
     int a = int(c.getArrayValue(3));
-    color col = color(r,g,b,a);
+    _color col = _color(r,g,b,a);
     println("event \talpha:"+a+"\tred:"+r+"\tgreen:"+g+"\tblue:"+b+"\tcol"+col);
   }
 }
 
-// color information from ColorPicker 'picker' are forwarded to the picker(int) function
+// _color information from ColorPicker 'picker' are forwarded to the picker(int) function
 void picker(int col) {
   println("picker\talpha:"+int(alpha(col))+"\tred:"+int(red(col))+"\tgreen:"+int(green(col))+"\tblue:"+int(blue(col))+"\tcol"+col);
 }
@@ -55,12 +55,12 @@ void picker(int col) {
 void keyPressed() {
   switch(key) {
     case('1'):
-    // method A to change color
+    // method A to change _color
     cp.setArrayValue(new float[] {120, 0, 120, 255});
     break;
     case('2'):
-    // method B to change color
-    cp.setColorValue(color(255, 0, 0, 255));
+    // method B to change _color
+    cp.setColorValue(_color(255, 0, 0, 255));
     break;
   }
 }

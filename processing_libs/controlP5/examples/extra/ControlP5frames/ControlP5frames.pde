@@ -18,13 +18,13 @@ void setup() {
 
   /* Add a controlframe */
 
-  cf1 = addControlFrame( "hello", 200, 200, 20, 20, color( 100 ) );
+  cf1 = addControlFrame( "hello", 200, 200, 20, 20, _color( 100 ) );
 
   // add a slider with an EventListener. When dragging the slider, 
   // variable bgColor will change accordingly. 
   cf1.control().addSlider( "s1" ).setRange( 0, 255 ).addListener( new ControlListener() {
     public void controlEvent( ControlEvent ev ) {
-      bgColor = color( ev.getValue() );
+      bgColor = _color( ev.getValue() );
     }
   }
   );
@@ -32,20 +32,20 @@ void setup() {
 
   /* Add a second controlframe */
 
-  cf2 = addControlFrame( "world", 200, 200, 20, 240, color( 100 ) );
+  cf2 = addControlFrame( "world", 200, 200, 20, 240, _color( 100 ) );
 
   // add a button with an EventListener. When releasing the button, 
-  // variable bgColor will change to color( 255 );  
+  // variable bgColor will change to _color( 255 );
   cf2.control().addButton( "b1" ).addListener( new ControlListener() {
     public void controlEvent( ControlEvent ev ) {
-      bgColor = color( 255 );
+      bgColor = _color( 255 );
     }
   }
   );
 
   cf2.control().addButton( "b2" ).addListener( new ControlListener() {
     public void controlEvent(ControlEvent ev) {
-      bgColor = color( random( 255 ), random( 255 ), random( 255 ) );
+      bgColor = _color( random( 255 ), random( 255 ), random( 255 ) );
     }
   }
   );
@@ -60,7 +60,7 @@ void draw() {
 
 
 ControlFrame addControlFrame(String theName, int theWidth, int theHeight) {
-  return addControlFrame(theName, theWidth, theHeight, 100, 100, color( 0 ) );
+  return addControlFrame(theName, theWidth, theHeight, 100, 100, _color( 0 ) );
 }
 
 ControlFrame addControlFrame(String theName, int theWidth, int theHeight, int theX, int theY, int theColor ) {

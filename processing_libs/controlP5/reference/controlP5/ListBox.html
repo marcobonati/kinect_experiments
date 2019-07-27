@@ -181,9 +181,9 @@ void setup() {
          .setSize(120, 120)
          .setItemHeight(15)
          .setBarHeight(15)
-         .setColorBackground(color(255, 128))
-         .setColorActive(color(0))
-         .setColorForeground(color(255, 100,0))
+         .setColorBackground(_color(255, 128))
+         .setColorActive(_color(0))
+         .setColorForeground(_color(255, 100,0))
          ;
 
   l.getCaptionLabel().toUpperCase(true);
@@ -191,7 +191,7 @@ void setup() {
   l.getCaptionLabel().setColor(0xffff0000);
   for (int i=0;i<80;i++) {
     l.addItem("item "+i, i);
-    l.getItem("item "+i).put("color", new CColor().setBackground(0xffff0000).setBackground(0xffff8800));
+    l.getItem("item "+i).put("_color", new CColor().setBackground(0xffff0000).setBackground(0xffff8800));
   }
   
 }
@@ -220,7 +220,7 @@ void keyPressed() {
   else if (key=='u') {
     // set the height of a listBoxItem, should always be a fraction of the listBox
     l.setItemHeight(10);
-    l.setBackgroundColor(color(100, 0, 0));
+    l.setBackgroundColor(_color(100, 0, 0));
   } 
   else if (key=='a') {
     int n = (int)(random(100000));

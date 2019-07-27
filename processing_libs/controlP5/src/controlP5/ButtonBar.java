@@ -153,7 +153,7 @@ public class ButtonBar extends Controller< ButtonBar > {
 		item.put( "name" , theName );
 		item.put( "text" , theName );
 		item.put( "value" , theValue );
-		item.put( "color" , getColor( ) );
+		item.put( "_color" , getColor( ) );
 		item.put( "view" , new CDrawable( ) {
 			@Override
 			public void draw( PGraphics theGraphics ) {

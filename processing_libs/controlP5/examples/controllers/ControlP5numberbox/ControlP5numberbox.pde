@@ -14,7 +14,7 @@ import controlP5.*;
 
 ControlP5 cp5;
 
-int myColorBackground = color(0,0,0);
+int myColorBackground = _color(0,0,0);
 
 public float numberboxValue = 100;
 
@@ -49,7 +49,7 @@ void draw() {
 }
 
 void numberbox(int theColor) {
-  myColorBackground = color(theColor);
+  myColorBackground = _color(theColor);
   println("a numberbox event. setting background to "+theColor);
 }
 

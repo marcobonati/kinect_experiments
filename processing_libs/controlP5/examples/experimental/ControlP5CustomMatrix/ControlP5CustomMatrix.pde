@@ -15,8 +15,8 @@ void setup() {
   .setInterval(200)
   .setGrid(x,y)
   .setMode(ControlP5.MULTIPLES)
-  .setColorBackground(color(120))
-  .setBackground(color(40));
+  .setColorBackground(_color(120))
+  .setBackground(_color(40));
   
   // initialize the presets for the CustomMatrix
   m.initPresets();

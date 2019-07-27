@@ -41,10 +41,10 @@ void setup() {
   cp5.addSlider("slider4", 0, 255, 20, 250, 128, 20);
 
   cp5.addButton("b1", 0, 20, 350, 80, 12).setCaptionLabel("save setA");
-  cp5.addButton("b2", 0, 101, 350, 80, 12).setCaptionLabel("load setA").setColorBackground(color(0, 100, 50));
+  cp5.addButton("b2", 0, 101, 350, 80, 12).setCaptionLabel("load setA").setColorBackground(_color(0, 100, 50));
 
   cp5.addButton("b3", 0, 200, 350, 80, 12).setCaptionLabel("save default");
-  cp5.addButton("b4", 0, 281, 350, 80, 12).setCaptionLabel("load default").setColorBackground(color(0, 100, 50));
+  cp5.addButton("b4", 0, 281, 350, 80, 12).setCaptionLabel("load default").setColorBackground(_color(0, 100, 50));
 
   
   // add a new properties set 'setA'
