@@ -13,6 +13,7 @@ public class UILabel {
     protected int _background = -1;
     protected PVector _position;
     protected PFont _font;
+    protected int _padding;
 
     public UILabel(PApplet parent){
         _parent = parent;
@@ -56,6 +57,15 @@ public class UILabel {
         return this;
     }
 
+    public int getPadding() {
+        return _padding;
+    }
+
+    public void setPadding(int padding) {
+        this._padding = padding;
+    }
+
+
     public void draw(){
         _parent.pushMatrix();
         _parent.translate(_position.x, _position.y);
@@ -66,7 +76,7 @@ public class UILabel {
         //draw background
         if (_background != -1) {
             _parent.fill(_background);
-            _parent.rect(0, 0, cw, 20);
+            _parent.rect(0, 0, cw + _padding * 2, _font.getSize() + _padding * 2);
         }
 
         //draw the text
@@ -74,7 +84,7 @@ public class UILabel {
         _parent.textFont(_font);
         _parent.translate(0, _font.getSize());
         _parent.fill(_color);
-        _parent.text(_text, 0, 0);
+        _parent.text(_text, _padding, _padding);
         _parent.popMatrix();
 
 

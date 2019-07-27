@@ -29,7 +29,7 @@ import java.io.Serializable;
 
 
 /**
- * Labels use the ControllerStyle class to store margin and padding information.
+ * Labels use the ControllerStyle class to store margin and _padding information.
  * 
  * @see controlP5.Label#getStyle()
  * 

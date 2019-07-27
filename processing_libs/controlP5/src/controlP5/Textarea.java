@@ -341,8 +341,8 @@ public class Textarea extends ControllerGroup< Textarea > implements ControlList
 		}
 	}
 
-	// !!! add padding to the box.
-	// padding and margin doesnt work nicely with textarea yet!
+	// !!! add _padding to the box.
+	// _padding and margin doesnt work nicely with textarea yet!
 	protected boolean inside( ) {
 		return ( cp5.getWindow( ).mouseX > x( position ) + x( _myParent.absolutePosition ) && cp5.getWindow( ).mouseX < x( position ) + x( _myParent.absolutePosition ) + _myWidth
 		    && cp5.getWindow( ).mouseY > y( position ) + y( _myParent.absolutePosition ) && cp5.getWindow( ).mouseY < y( position ) + y( _myParent.absolutePosition ) + _myHeight );
