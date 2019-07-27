@@ -20,9 +20,9 @@ public class UIComponentsTest extends AbstractMainApplet {
 
         _label = new UILabel(this)
                     .setColor(color(255,255,255))
-                    .setBackground(color(92,172,29, 255))
+                    .setBackground(color(92,172,29, 150))
                     .setPosition(new PVector(50,50))
-                    .setText("Hello World!");
+                    .setText("Right Shoulder. Angle: 245°");
     }
 
     @Override
