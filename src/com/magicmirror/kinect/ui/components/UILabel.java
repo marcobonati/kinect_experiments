@@ -76,6 +76,7 @@ public class UILabel {
         //draw background
         if (_background != -1) {
             _parent.fill(_background);
+            _parent.stroke(_background);
             _parent.rect(0, 0, cw + _padding * 2, _font.getSize() + _padding * 2);
         }
 

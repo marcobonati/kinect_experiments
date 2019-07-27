@@ -19,8 +19,8 @@ public class UIComponentsTest extends AbstractMainApplet {
         super.setup();
 
         _label = new UILabel(this)
-                    .setColor(color(0,0,200))
-                    .setBackground(color(36,255,138))
+                    .setColor(color(255,255,255))
+                    .setBackground(color(92,172,29, 255))
                     .setPosition(new PVector(50,50))
                     .setText("Hello World!");
     }
@@ -28,7 +28,9 @@ public class UIComponentsTest extends AbstractMainApplet {
     @Override
     public void draw() {
         super.draw();
-        _label.draw();
+
+        _label.setPosition(new PVector(mouseX +20 ,mouseY +20))
+                .draw();
     }
 
 }

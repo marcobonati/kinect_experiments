@@ -38,7 +38,7 @@ public class AbstractMainApplet extends PApplet {
         smooth();
 
         if (UIConstants.MAIN_FONT == null){
-            UIConstants.MAIN_FONT = createFont("Helvetica", 17);
+            UIConstants.MAIN_FONT = createFont("Helvetica", 14);
         }
 
     }
