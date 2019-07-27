@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.jsoniter:jsoniter:0.9.23" type="repository">
+    <properties maven-id="com.jsoniter:jsoniter:0.9.23" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jsoniter/jsoniter/0.9.23/jsoniter-0.9.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
