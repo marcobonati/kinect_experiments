@@ -13,7 +13,7 @@ public class UILabel {
     protected int _background = -1;
     protected PVector _position;
     protected PFont _font;
-    protected int _padding;
+    protected int _padding = 4;
 
     public UILabel(PApplet parent){
         _parent = parent;
